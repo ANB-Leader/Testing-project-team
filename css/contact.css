@@ -1,32 +1,82 @@
-form {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2em;
   display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 1rem auto;
+  justify-content: center;
+}
+
+.contact-form {
+  background: white;
+  padding: 2em;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 form input,
 form textarea {
-  margin-bottom: 1rem;
+  width: 100%;
   padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 form button {
+  width: 100%;
   padding: 10px;
-  background-color: #0a84ff;
+  background-color: #007BFF;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: #006fd6;
+  background-color: #0056b3;
 }
 
-#form-status {
+#form-msg {
+  margin-top: 1em;
+  color: green;
   text-align: center;
-  margin-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
